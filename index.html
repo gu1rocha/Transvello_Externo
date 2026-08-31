@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transvello Logística | Soluções em Transporte</title>    
+    
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo.jpeg">
+
+    <link rel="stylesheet" href="./assets/css/inicialize.css">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/script.js" defer></script>
+
+</head>
+<body>
+
+    <header>
+        <a class="logo" href="/Transvello/">
+            <img src="./assets/img/logo.jpeg" alt="Logo Transvello" style="max-width: 100%; max-height: 55px; object-fit: contain;">
+        </a>
+        <nav>
+            <a href="#sobre">Sobre Nós</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#clientes">Clientes</a>
+            <a href="#contato">Contato</a>
+        </nav>
+        <a href="#orcamento" class="btn-cta">Pedir Orçamento</a>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Pontualidade e Segurança para a sua Carga</h1>
+            <p>Conectamos sua indústria ao destino com eficiência, tecnologia de acompanhamento e soluções logísticas integradas.</p>
+        </div>
+        
+        <div class="card-orcamento" id="orcamento">
+            <h3>Solicite uma Cotação</h3>
+            <form onsubmit="enviarParaWhatsApp(); return false;">
+                <div class="form-group">
+                    <label for="empresa">Empresa</label>
+                    <input id="empresa" type="text" placeholder="Sua empresa" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">WhatsApp</label>
+                    <input id="telefone" type="tel" placeholder="(00) 00000-0000" required>
+                </div>
+                <div class="form-group">
+                    <label for="origem">Origem</label>
+                    <input id="origem" type="text" placeholder="Ex: São Paulo/SP" required>
+                </div>
+                <div class="form-group">
+                    <label for="destino">Destino</label>
+                    <input id="destino" type="text" placeholder="Ex: Curitiba/PR" required>
+                </div>
+                <div class="form-group">
+                    <label for="tipo">Tipo de Carga</label>
+                    <select id="tipo" required>
+                        <option value="">Selecione...</option>
+                        <option value="Carga Fracionada">Carga Fracionada</option>
+                        <option value="Carga Fechada / Lotação">Carga Fechada / Lotação</option>
+                        <option value="Operação Dedicada">Operação Dedicada</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-submit">Solicitar Cotação Rápida</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            
+            <!-- Coluna 1: Sobre -->
+            <div class="footer-col">
+                <div class="logo" style="color: #ffffff; margin-bottom: 12px;">TRANSVELLO <span style="color: #a0aec0;">LOGÍSTICA</span></div>
+                <p>Soluções integradas de logística e transporte rodoviário de cargas. Foco em segurança, pontualidade e inovação nos processos.</p>
+            </div>
+
+            <!-- Coluna 2: Navegação -->
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#sobre">Quem Somos</a></li>
+                    <li><a href="#servicos">Nossos Serviços</a></li>
+                    <li><a href="#clientes">Nossos Clientes</a></li>
+                    <li><a href="#orcamento">Pedir Orçamento</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna 3: Acesso Restrito / Sistemas -->
+            <div class="footer-col">
+                <h4>Área do Cliente</h4>
+                <ul>
+                    <li><a href="#" target="_blank">Portal do Cliente / Dashboard</a></li>
+                    <li><a href="#">Emissão de Termo de Avaria</a></li>
+                    <li><a href="#">Rastreamento de Cargas</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna 4: Contato -->
+            <div class="footer-col" id="contato">
+                <h4>Contato</h4>
+                <p>📍 Matriz: São Paulo / SP</p>
+                <p>📞 (11) 90000-0000</p>
+                <p>✉️ contato@transvello.com.br</p>
+                <p>⏰ Seg - Sex: 08h às 18h</p>
+            </div>
+
+        </div>
+
+        <!-- Linha Final de Copyright -->
+        <div class="footer-bottom">
+            <div>
+                © 2026 Transvello Logística. Todos os direitos reservados.
+            </div>
+            <div>
+                <a href="#">Termos de Uso</a> | 
+                <a href="#">Política de Privacidade</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

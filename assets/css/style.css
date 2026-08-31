@@ -1,0 +1,236 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    color: var(--color-dark);
+    background: var(--color-background);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+.logo span {
+    font-size: 12px;
+    color: #718096;
+    display: block;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: var(--color-dark);
+    font-weight: 500;
+}
+
+.btn-cta {
+    background: var(--color-accent);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 5%;
+    background: linear-gradient(135deg, #0f2537 0%, #1a365d 100%);
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 300px;
+    padding-right: 40px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    font-size: 16px;
+    color: #cbd5e1;
+    margin-bottom: 25px;
+}
+
+/* Card de Orçamento */
+.card-orcamento {
+    background: #fff;
+    color: var(--color-dark);
+    padding: 25px;
+    border-radius: 10px;
+    width: 360px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-orcamento h3 {
+    margin-top: 0;
+    color: var(--color-primary);
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btn-submit {
+    width: 100%;
+    background: var(--color-primary);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background: var(--color-accent);
+}
+
+footer {
+    background-color: var(--color-primary-dark);
+    color: #a0aec0;
+    padding: 50px 8% 20px 8%;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-col h4 {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.footer-col h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 35px;
+    height: 2px;
+    background-color: var(--color-accent);
+}
+
+.footer-col p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+    color: #a0aec0;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    border-top: 1px solid #1a2d3d;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+}
+
+.footer-bottom a {
+    color: #a0aec0;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.footer-bottom a:hover {
+    color: #ffffff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 5%;
+    }
+
+    .hero-text {
+        padding-right: 0;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .footer-bottom nav {
+        margin-top: 10px;
+    }
+}
