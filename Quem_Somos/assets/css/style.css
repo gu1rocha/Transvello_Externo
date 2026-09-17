@@ -1,0 +1,338 @@
+/* RESET LOCAL & VARIÁVEIS */
+.quem-somos-container {
+    --qs-dark: #0f172a;
+    --qs-dark-card: #1e293b;
+    --qs-amber: #f59e0b;
+    --qs-amber-hover: #d97706;
+    --qs-bg-light: #f8fafc;
+    --qs-text-dark: #1e293b;
+    --qs-text-muted: #64748b;
+    --qs-whatsapp: #22c55e;
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--qs-text-dark);
+    line-height: 1.6;
+    width: 100%;
+}
+
+.quem-somos-container * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ESTRUTURA GERAL */
+.qs-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.qs-section {
+    padding: 60px 0;
+}
+
+.qs-bg-light { background-color: var(--qs-bg-light); }
+.qs-bg-white { background-color: #ffffff; }
+
+/* HERO SECTION */
+.qs-hero {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    color: #ffffff;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.qs-hero .qs-content {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.qs-badge {
+    display: inline-block;
+    background-color: var(--qs-amber);
+    color: #000;
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.qs-badge.neutro {
+    background-color: #e2e8f0;
+    color: #475569;
+}
+
+.qs-hero h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.qs-hero p {
+    color: #cbd5e1;
+    font-size: 1.1rem;
+}
+
+/* GRID LAYOUTS */
+.qs-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.qs-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* TEXTOS E CITAÇÕES */
+.qs-text-block h2 {
+    font-size: 1.8rem;
+    color: var(--qs-dark);
+    margin-bottom: 5px;
+}
+
+.subtitulo-membro {
+    font-size: 1.05rem;
+    color: var(--qs-amber-hover);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.qs-text-block p {
+    color: var(--qs-text-muted);
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.qs-quote-box {
+    border-left: 4px solid var(--qs-amber);
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-top: 20px;
+}
+
+.qs-quote-box p {
+    font-style: italic;
+    color: #475569;
+    margin: 0;
+}
+
+/* IMAGENS PADRÃO DOS INTEGRANTES */
+.qs-image-block {
+    position: relative;
+}
+
+.qs-img {    
+    display: block;
+    width: 100%;
+    height: 26rem;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.img-object-position-top { object-position: top; }
+.img-object-position-center { object-position: center; }
+
+/* PLACEHOLDER PARA FOTOS PENDENTES */
+.placeholder-bloco {
+    background-color: #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #64748b;
+    border: 2px dashed #cbd5e1;
+}
+
+/* CARD COMPACTO PARA A FOTO DO PAI DA KARINE */
+.qs-img-card-sm {
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    border: 1px solid #e2e8f0;
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+.qs-img-sm {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 8px;
+    display: block;
+}
+
+.qs-img-caption {
+    padding: 10px 5px 5px 5px;
+    text-align: center;
+}
+
+.qs-img-caption strong {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--qs-dark);
+}
+
+.qs-img-caption small {
+    color: var(--qs-text-muted);
+    font-size: 0.75rem;
+}
+
+/* PRINCÍPIOS / CARDS */
+.qs-header-center {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.qs-header-center h2 {
+    font-size: 1.8rem;
+    color: var(--qs-dark);
+}
+
+.qs-header-center p {
+    color: var(--qs-text-muted);
+}
+
+.qs-card {
+    background-color: var(--qs-bg-light);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+.qs-card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.qs-icon-amber { background-color: var(--qs-amber); color: #000; }
+.qs-icon-dark { background-color: var(--qs-dark); color: #fff; }
+
+.qs-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--qs-dark);
+}
+
+.qs-card p {
+    font-size: 0.9rem;
+    color: var(--qs-text-muted);
+}
+
+.qs-list {
+    list-style: none;
+}
+
+.qs-list li {
+    font-size: 0.9rem;
+    color: var(--qs-text-muted);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.qs-list li span {
+    color: var(--qs-amber-hover);
+    font-weight: bold;
+}
+
+/* CALL TO ACTION (CTA) */
+.qs-cta-box {
+    background-color: var(--qs-dark);
+    color: #ffffff;
+    border-radius: 16px;
+    padding: 40px;
+    text-align: center;
+}
+
+.qs-cta-box h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.qs-cta-box p {
+    color: #94a3b8;
+    max-width: 600px;
+    margin: 0 auto 25px auto;
+}
+
+.qs-cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.qs-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.qs-btn-whatsapp {
+    background-color: var(--qs-whatsapp);
+    color: #ffffff;
+}
+
+.qs-btn-whatsapp:hover {
+    background-color: #16a34a;
+}
+
+.qs-btn-outline {
+    border: 1px solid #334155;
+    color: #ffffff;
+}
+
+.qs-btn-outline:hover {
+    background-color: #334155;
+}
+
+/* RESPONSIVIDADE (MEDIA QUERIES) */
+@media (max-width: 768px) {
+    .qs-grid-2, .qs-grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .qs-hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .qs-cta-buttons {
+        flex-direction: column;
+    }
+
+    .qs-btn {
+        width: 100%;
+    }
+
+    .qs-reverse-mobile {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .qs-img {
+        height: 20rem;
+    }
+}
